@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>+ FOCO - ANSIEDADE</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>+ FOCO <span>- ANSIEDADE</span></h1>
+        <p>Organize suas tarefas. Conquiste seus objetivos.</p>
+    </header>
+
+    <main>
+
+        <section class="resumo">
+            <h2>Meu painel</h2>
+
+            <div class="cards">
+
+                <div class="card">
+                    <h3>Total de tarefas</h3>
+                    <p id="totalTarefas">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Em andamento</h3>
+                    <p id="tarefasAndamento">0</p>
+                </div>
+
+                <div class="card">
+                    <h3>Concluídas</h3>
+                    <p id="tarefasConcluidas">0</p>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="tarefas">
+            <h2>Minhas tarefas</h2>
+
+            <div class="formulario">
+
+                <input type="text" id="tituloTarefa"
+                    placeholder="Digite uma nova tarefa">
+
+                <select id="importanciaTarefa">
+                    <option value="sim">Importante</option>
+                    <option value="nao">Não importante</option>
+                </select>
+
+                <select id="urgenciaTarefa">
+                    <option value="sim">Urgente</option>
+                    <option value="nao">Não urgente</option>
+                </select>
+
+                <input type="date" id="prazoTarefa"
+                    title="Prazo de conclusão">
+
+                <button id="btnAdicionar">Adicionar tarefa</button>
+
+            </div>
+
+            <!-- MATRIZ DE EISENHOWER -->
+
+            <section class="matriz">
+                <h2>Matriz de Eisenhower</h2>
+
+                <p>Organize suas tarefas conforme a importância e a urgência.</p>
+
+                <div class="quadro-matriz">
+
+                    <div class="quadrante">
+                        <h3>1. Fazer agora</h3>
+                        <p>Importante e urgente</p>
+                        <div id="fazerAgora"></div>
+                    </div>
+
+                    <div class="quadrante">
+                        <h3>2. Planejar</h3>
+                        <p>Importante e não urgente</p>
+                        <div id="planejar"></div>
+                    </div>
+
+                    <div class="quadrante">
+                        <h3>3. Delegar</h3>
+                        <p>Não importante e urgente</p>
+                        <div id="delegar"></div>
+                    </div>
+
+                    <div class="quadrante">
+                        <h3>4. Reavaliar</h3>
+                        <p>Não importante e não urgente</p>
+                        <div id="reavaliar"></div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- QUADRO KANBAN -->
+
+            <div class="quadro">
+
+                <div class="coluna">
+                    <h3>A Fazer</h3>
+                    <div id="aFazer"></div>
+                </div>
+
+                <div class="coluna">
+                    <h3>Em Andamento</h3>
+                    <div id="emAndamento"></div>
+                </div>
+
+                <div class="coluna">
+                    <h3>Concluído</h3>
+                    <div id="concluido"></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="pomodoro">
+            <h2>Técnica Pomodoro</h2>
+
+            <p>Reserve um tempo para se concentrar.</p>
+
+            <div id="relogio">25:00</div>
+
+            <button id="btnIniciar">Iniciar</button>
+            <button id="btnPausar">Pausar</button>
+            <button id="btnReiniciar">Reiniciar</button>
+            <button id="btnDescanso">Iniciar descanso (5 min)</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>+ FOCO - ANSIEDADE | Organização e produtividade</p>
+    </footer>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
